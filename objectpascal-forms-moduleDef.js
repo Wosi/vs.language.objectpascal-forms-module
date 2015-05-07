@@ -103,16 +103,16 @@ define(["require", "exports"], function (require, exports) {
             ],
             whitespace: [
                 [/[ \t\r\n]+/, ''],
-                [/{(?!\$)/, 'comment', '@comment'],
+                [/{(?!\$)/, 'constant.numeric.hex', '@hexvalues'],
                 [/{\$/, 'annotation', '@compilerdirective'],                
                 [/\(\*/, 'comment', '@braceasteriskcomment'],
                 [/\/\/.*$/, 'comment'],
             ],
             
-            comment: [
-                [/[^}]+/, 'comment'],
-                [/}/, 'comment', '@pop'],
-                [/{/, 'comment'],                   
+            hexvalues: [
+                [/[^}]+/, 'constant.numeric.hex'],
+                [/}/, 'constant.numeric.hex', '@pop'],
+                [/{/, 'constant.numeric.hex'],                   
             ],
             
             braceasteriskcomment: [
