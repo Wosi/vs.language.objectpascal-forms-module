@@ -4,7 +4,7 @@ Syntax highlighting for ObjectPascal forms modules (.dfm, .lfm) in Visual Studio
 
 This is a first attempt to support ObjectPascal forms modules and Delphi in Visual Studio Code (https://code.visualstudio.com/)
 
-Don't miss the ([plugin for ObjectPascal Code](https://github.com/Wosi/vs.language.objectpascal))
+Don't miss my [plugin for ObjectPascal Code](https://github.com/Wosi/vs.language.objectpascal)
                                                                                                                         
 # Installation
 Clone this repository into the editor's plugin directory to a new subfolder named vs.language.objectpascal-forms-module.
