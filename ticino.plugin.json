@@ -1,0 +1,19 @@
+{
+	"pluginId": "vs.language.objectpascal-forms-module",
+	"activationEvents": ["textModel:objectpascal-forms-module"],
+	"mainModule": "./objectpascal-forms-moduleMain",
+	"contributes": {
+		"language": [{
+			"id": "objectpascal-forms-module",
+			"extensions": [ ".dfm", ".lfm"],
+			"aliases": [ "ObjectPascal Forms Module"],
+			"mimetypes": ["text/x-objectpascal-forms-module-source", "text/x-objectpascal-forms-module"]
+		}]
+	},
+	"scripts": {
+		"compile": "node ../../node_modules/gulp/bin/gulp.js --gulpfile ../gulpfile.js compile --dir vs.language.objectpascal-forms-module"
+	},
+	"_bundling": [
+		{ "name": "./objectpascal-forms-moduleMain" }
+	]
+}
